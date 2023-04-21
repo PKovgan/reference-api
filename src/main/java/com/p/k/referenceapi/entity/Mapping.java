@@ -4,7 +4,15 @@ import lombok.Data;
 
 @Data
 public class Mapping {
+
     private String ac;
-    private String ABCCopy;
-    private String Entity;
+    private MappingCopyEntity mce;
+
+    public Mapping() {
+    }
+
+    public Mapping(String ac, MappingCopyEntity mce) {
+        this.ac = ac;
+        this.mce = mce;
+    }
 }
